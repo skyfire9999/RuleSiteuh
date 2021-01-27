@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Les règles des jeux &raquo; RulesSiteuh</title>
+	<meta name="description" content="Toutes les règles de jeux présentes sur ce site.">
+	<meta name="author" content="Lilo Yahia-Berrouiguet">
+	<meta http-equiv="content-type" content="text-html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/clipboard.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/games.js"></script>
+	<link rel="icon" href="./img/Siteuh.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div id="header">
+	<div class="wrapper">
+	<div class="help-us">
+		<p>Site actuellement : <em>En construction</em></p>
+		<a href="./help.html"><i class="fa fa-gamepad"></i> Aidez nous!</a>
+		<p><em id="playerCount">0</em> personnes ont participé au site</p>
+	</div>
+	<div class="logo">Site de règles</div>
+	<div class="donation">
+		<a href="paypal.com" target="_blank"><i class="fa fa-shopping-cart"></i> Faire une donation</a>
+	</div>
+	</div>
+	</div>
+	<div id="navigation-filler"></div>
+	<div id="navigation">
+	<div class="wrapper">
+		<a href="./index.html" class="logo sticky-only"></a>
+		<ul>
+			<li class="">
+					<a href="./index.html"> Présentation </a>
+			</li>
+			<li class="active">
+					<a href="./rules.html"> Règles </a>
+			</li>
+			<li class="">
+					<a href="./contact.html"> Contact </a>
+			</li >
+			<li class="">
+					<a href="./help.html"> Nous aider </a>
+			</li>
+		</ul>
+	</div>
+	</div>	
+	
+
+
+					<!--<ul class="deroule">
+						<li><a href="/rules/cards.html"> Jeux de cartes </a></li>
+						<li><a href="/rules/society.html"> Jeux de sociétés </a></li>
+					</ul>-->
+
+<div>
+<p><br/> <br/></p>
+</div>
+<div id="games">
+<div class="wrapper">
+<div class="selector">
+<ul>
+<li><a href="#" class="selected" data-tag="all">Tout</a></li>
+<li><a href="#" data-tag="cartes">Cartes</a></li>
+<li><a href="#" data-tag="ffa">Chacun pour soi</a></li>
+<li><a href="#" data-tag="rpg">Jeu de rôle</a></li>
+<li><a href="#" data-tag="societe">Société</a></li>
+<li><a href="#" data-tag="long">Long</a></li>
+<li><a href="#" data-tag="equipe">Equipe</a></li>
+<li><a href="#" data-tag="court">Court</a></li>
+</ul>
+</div>
+<ul class="game-list">
+<li class="pmk" data-tags="cartes,court,ffa">
+<a href="./poker.html">
+<img src="img/games/poker.jpg">
+<div class="overlay">
+<h3>Poker</h3>
+ <p>Un classique du casino</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Cartes</li>
+<li>Court</li>
+<li>Chacun pour soi</li>
+</ul>
+</a>
+</li>
+<li class="bed" data-tags="cartes,court,ffa">
+<a href="./uno.html">
+<img src="img/games/uno.jpg">
+<div class="overlay">
+<h3>Uno</h3>
+<p>LE jeu en famille et entre amis</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Cartes</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="mimv" data-tags="cartes,ffa,court,societe">
+<a href="./img/dixit.html">
+<img src="img/games/dixit.jpg">
+<div class="overlay">
+<h3>Dixit</h3>
+<p>Des mots pour des images</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Cartes</li>
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+<ul class="tags2">
+<li>Société</li>
+</ul>
+</a>
+</li>
+<li class="hide" data-tags="cartes,ffa,court,societe">
+<a href="./mille-bornes.html">
+<img src="./img/mille-bornes.jpg">
+<div class="overlay">
+<h3>Mille bornes</h3>
+<p>Avancez plus vite pour gagner</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Cartes</li>
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+<ul class="tags2">
+<li>Société</li>
+</ul>
+</a>
+</li>
+<li class="timv" data-tags="cartes,equipe">
+<a href="./tarot.html">
+<img src="./img/tarot.jpg">
+<div class="overlay">
+<h3>Tarot</h3>
+<p>Des plis et des atouts</p>
+<i class="fa fa-arrow-circle-right"></i>
+ </div>
+<ul class="tags">
+<li>Cartes</li>
+<li>Equipe</li>
+</ul>
+</a>
+</li>
+<li class="sky" data-tags="cartes,ffa,court">
+<a href="./mistigri.html">
+<img src="./img/mistigri.jpg">
+<div class="overlay">
+<h3>Mistigri/Pouilleu</h3>
+<p>Ne gardez pas la carte maudite</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Cartes</li>
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="gnt" data-tags="ffa,court">
+<a href="./petit-bac.html">
+<img src="./img/petit-bac.jpg">
+<div class="overlay">
+<h3>Petit Bac</h3>
+<p>Une lettre et des themes</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="grav" data-tags="ffa,court,societe">
+<a href="./qui-est-ce.html">
+<img src="./img/qui-est-ce.jpg">
+<div class="overlay">
+<h3>Qui est-ce ?</h3>
+<p>C'est une fille ou un garçon?</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+<li>Société</li>
+</ul>
+</a>
+</li>
+<li class="dr" data-tags="ffa,societe,court">
+<a href="./triomino.html">
+<img src="./img/triomino.jpg">
+<div class="overlay">
+<h3>Triomino</h3>
+<p>Comme des dominos</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Société</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="sg" data-tags="ffa,cartes">
+<a href="./bataille.html">
+<img src="./img/bataille.jpg">
+<div class="overlay">
+<h3>Bataille</h3>
+<p>Le jeu de cartes classique</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Cartes</li>
+</ul>
+</a>
+</li>
+<li class="bp" data-tags="ffa,societe,court">
+<a href="./dobble.html">
+<img src="./img/dobble.jpg">
+<div class="overlay">
+<h3>Dobble</h3>
+<p>Soyez le plus rapide</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Société</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="sg" data-tags="ffa,court">
+<a href="./yam.html">
+<img src="./img/yam.jpg">
+<div class="overlay">
+<h3>Yathze/Yam's</h3>
+<p>Figures avec des dés</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="cai" data-tags="ffa,rpg,court">
+<a href="./blanc-manger-coco.html">
+<img src="./img/blanc-manger-coco.jpg">
+<div class="overlay">
+<h3>Blanc manger coco</h3>
+<p>Qui suis-je, que fais-je?</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Jeu de rôle</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="lab" data-tags="ffa,court">
+<a href="./mastermind.html">
+<img src="./img/mastermind.jpg">
+<div class="overlay">
+<h3>Mastermind</h3>
+<p>Trouvez le code couleur</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="bd" data-tags="equipe,court,cartes">
+<a href="./kems.html">
+<img src="./img/kems.jpg">
+<div class="overlay">
+<h3>Kem's</h3>
+<p>Faites un signe</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Equipe</li>
+<li>Court</li>
+<li>Cartes</li>
+</ul>
+</a>
+</li>
+<li class="draw" data-tags="ffa,court">
+<a href="./black-jack.html">
+<img src="./img/black-jack.jpg">
+<div class="overlay">
+<h3>Black jack</h3>
+<p>21 tout simplement</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+</ul>
+</a>
+</li>
+<li class="sp" data-tags="ffa,societe">
+<a href="./echecs.html">
+<img src="./img/echecs.jpg">
+<div class="overlay">
+<h3>Echecs</h3>
+<p>Duel de royaumes</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Société</li>
+<li>Court</li>
+</ul>
+ </a>
+</li>
+<li class="spl" data-tags="societe,long,ffa">
+<a href="./dames.html">
+<img src="./img/dames.jpg">
+<div class="overlay">
+<h3>Dames</h3>
+<p>Manger ou être mangé</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Long</li>
+<li>Société</li>
+<li>Chacun pour soi</li>
+</ul>
+</a>
+</li>
+<li class="oitc" data-tags="cartes,long,equipe">
+<a href="./belote.html">
+<img src="./img/belote.jpg">
+<div class="overlay">
+<h3>Belote</h3>
+<p>Le jeu de village</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Cartes</li>
+<li>Long</li>
+<li>Equipe</li>
+</ul>
+</a>
+</li>
+<li class="hb" data-tags="ffa,court,societe">
+<a href="./bonne-paye.html">
+<img src="./img/bonne-paye.jpg">
+<div class="overlay">
+<h3>La Bonne paye</h3>
+<p>Une facture impayée</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+<li>Société</li>
+</ul>
+</a>
+</li>
+<li class="cr" data-tags="ffa,equipe,long,rpg,societe">
+<a href="./risk.html">
+<img src="./img/risk.jpg">
+<div class="overlay">
+<h3>Risk</h3>
+<p>Le grand jeu de stratégie</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Equipe</li>
+<li>Long</li>
+</ul>
+<ul class="tags2">
+<li>Jeu de rôle</li>
+<li>Société</li>
+</ul>
+ </a>
+</li>
+<li class="ef" data-tags="ffa,societe,long">
+<a href="./trivial-pursuit.html">
+<img src="./img/trivial-pursuit.jpg">
+<div class="overlay">
+<h3>Trivial pursuit</h3>
+<p>Testez vos connaissances</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Société</li>
+<li>Long</li>
+</ul>
+</a>
+</li>
+<li class="hero" data-tags="ffa,court,societe">
+<a href="./puissance4.html">
+<img src="./img/puissance4.jpg">
+<div class="overlay">
+<h3>Puissance 4</h3>
+<p>Aligner 4 et c'est gagné!</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Court</li>
+<li>Société</li>
+</ul>
+</a>
+</li>
+<li class="rr" data-tags="equipe,long,rpg">
+<a href="./loup-garou.html">
+<img src="./img/loup-garou.jpg">
+<div class="overlay">
+<h3>Loup Garou</h3>
+<p>Les traitres sont parmi nous</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Equipe</li>
+<li>Jeu de rôle</li>
+</ul>
+<ul class="tags2">
+<li>Long ~3min/personne</li>
+</ul>
+</a>
+</li>
+<li class="slap" data-tags="ffa,long,societe">
+<a href="./cluedo.html">
+<img src="./img/cluedo.jpg">
+<div class="overlay">
+<h3>Cluedo</h3>
+<p>Trouvez le murder</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Long</li>
+<li>Société</li>
+</ul>
+</a>
+</li>
+ <li class="mm" data-tags="ffa,long,societe">
+<a href="./scrabble.html">
+<img src="./img/scrabble.jpg">
+<div class="overlay">
+<h3>Scrabble</h3>
+<p>Dico conseillé!</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Long</li>
+<li>Société</li>
+</ul>
+</a>
+</li>
+<li class="ig" data-tags="ffa,long,societe">
+<a href="./monopoly.html">
+<img src="./img/monopoly.jpg">
+<div class="overlay">
+<h3>Monopoly</h3>
+<p>Argent et trahison</p>
+<i class="fa fa-arrow-circle-right"></i>
+</div>
+<ul class="tags">
+<li>Chacun pour soi</li>
+<li>Long</li>
+<li>Société</li>
+</ul>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<script src="./js/games.js"></script>
+</body>
